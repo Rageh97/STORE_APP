@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+    rel="stylesheet"
+  />
+
+    <!-- <link rel="stylesheet" href="all.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>LOG IN</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+
+      <div class="container">
+        <div class="items">
+          <div class="brand">
+            <h1><span class="br">B'R</span> FOOTBAL</h1>
+          </div>
+
+          <div class="icon">
+            <a href="login.html">LogIn</a>
+            <a href="register.html">SignUp</a>
+          </div>
+        </div>
+      </div>
+      <!-- End of Navbar -->
+    </header>
+    <div class="container">
+      <div class="form rounded text-center">
+        <h3 class="text-white mb-5"><span class="br2">B'R</span> FOOTBAL</h3>
+        <h5 class="text-white mb-5">SIGN IN</h5>
+        <form>
+          <input type="text" placeholder="Username" id="username-log"/>
+          <input type="password" placeholder="Password" id="password-log"/>
+          <button type="submit" class="border rounded-5" id="btn-log">SUBMIT</button>
+        </form>
+        <p class="text-white mt-5">
+          Not have account
+          <a class="text-warning text-decoration-none" href="register.html"
+            >SIGN UP</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

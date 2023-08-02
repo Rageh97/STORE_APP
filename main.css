@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #e9ebee;
+  z-index: 2;
+  box-shadow: 0px 0px 8px black;
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand h1 {
+  margin-right: 170px;
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  color: rgb(0, 35, 111);
+}
+.brand h1:hover {
+  letter-spacing: 5px;
+}
+.brand .span {
+  margin-right: 30px;
+ 
+  padding: 3px;
+  border-radius: 3px;
+ 
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(23, 8, 102);
+}
+.brand .span:hover {
+  background-color: rgb(2, 31, 95);
+  color: rgb(255, 255, 255);
+}
+.brand .br {
+  color: rgb(227, 171, 0);
+}
+.aproducts{
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav i {
+  font-size: 25px;
+  color: rgb(11, 3, 97);
+}
+.nav .lore a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: rgb(0, 40, 121);
+}
+.nav .lore a:hover {
+  color: orange;
+}
+.user-info {
+  display: none;
+  cursor: pointer;
+}
+.log-out {
+  display: none;
+  cursor: pointer;
+}
+.log-out:hover {
+  color: rgb(198, 1, 1);
+}
+.log-out:hover::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: rgb(11, 35, 107);
+  position: absolute;
+  right: 160px;
+  top: 65%;
+}
+
+/* end of header  ................................*/
+
+.section-1 {
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  background-image: url("/img/cover.jpg");
+  background-size: cover;
+  margin-bottom: 70px;
+}
+.text h1 {
+  color: white;
+  margin-top: 90px;
+  margin-left: 400px;
+  text-transform: uppercase;
+}
+.products-item {
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px;
+}
+
+/* end of section 1.............................. */
+.container .text-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.text-header h3 {
+  margin-bottom: 25px;
+  position: relative;
+}
+.text-header h3::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: rgb(255, 145, 0);
+  position: absolute;
+  left: 460px;
+  top: 50%;
+}
+.text-header h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: rgb(255, 145, 0);
+  position: absolute;
+  right: 460px;
+  top: 50%;
+}
+/* cart................................................ */
+/* .row-1 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.row-2 .container{
+    width: 100%;
+    height: 350px;
+   
+}
+.container .img{
+    height: 100%;
+  }
+  .container .img img{
+   
+    height: 100%;
+    object-fit: cover;
+}
+.img{
+    position: relative;
+}
+.img::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 200px;
+    background-color: rgb(255, 149, 0);
+    position: absolute;
+    left: 460px;
+    top: 20%;
+} */
+/* ................................. */
+.cart {
+  right: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  z-index: 1;
+  position: fixed;
+  overflow: scroll;
+  height: 100%;
+}
+.cart-Item {
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.img {
+  width: 40%;
+}
+.content {
+  width: 35%;
+}
+.total-item {
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 4px;
+  border-radius: 40%;
+  top: -10px;
+  right: 0;
+  font-size: 12px;
+}
+.total-price {
+  width: 100%;
+}
+.no-items{
+  margin-left: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
+  font-size: 30px;
+  transition: 2s;
+}
+/* ......very important how can i do animation scroll by css............................................................... */
+.hidden{
+opacity: 0;
+transition: all 1.5s;
+filter: blur(5px);
+transform: translateX(-100%);
+}
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+}
+@media(prefers-reduced-motion){
+  .hidden{
+    
+    transition: none;
+    }
+}
+/* ................................................................................... */
+.h3{
+  position: relative;
+}
+.h3::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: rgb(255, 145, 0);
+  position: absolute;
+  left: 440px;
+  top: 50%;
+}
+.h3::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: rgb(255, 145, 0);
+  position: absolute;
+  right: 440px;
+  top: 50%;
+}
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+.secfooter1{
+  background-color: #0d3c83;
+  box-shadow: 0px 0px 8px black;
+  padding: 0;
+  margin: 0;
+}
+i:hover{
+  color: orange;
+  transition: 0.5s;
+}
+.UP{
+  background-color: red;
+  float: right;
+  margin-top: -50px;
+  color: white;
+  padding: 2px;
+  border: none;
+  border-radius: 3px;
+
+}
+/* .......................................................................... */
+/* ..............responsive page............................................. */
+
+

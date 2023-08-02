@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Righteous&display=swap");
+body {
+  background-color: rgb(255, 255, 255);
+}
+header {
+  background-color: rgb(30, 31, 33);
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand h1 {
+  margin-right: 170px;
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+.brand h1:hover {
+  letter-spacing: 5px;
+}
+.brand .span {
+  margin-right: 30px;
+  background-color: rgb(2, 31, 95);
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px rgb(154, 150, 150);
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+.brand .span:hover {
+  background-color: rgb(202, 138, 0);
+  color: rgb(255, 255, 255);
+}
+.brand .br {
+  color: rgb(227, 171, 0);
+}
+.icon i {
+  font-size: 25px;
+  color: rgb(11, 3, 97);
+}
+.icon a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+}
+.icon a:hover {
+  color: orange;
+}
+/* .............................................................................. */
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(38, 38, 42);
+  text-align: center;
+  padding: 20px;
+  width: 30%;
+  height: 500px;
+}
+
+.form form input {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.form h5 {
+  position: relative;
+}
+
+.form h5::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1.5px;
+  background-color: rgb(255, 145, 0);
+  position: absolute;
+  left: 183px;
+  bottom: -4px;
+}
+.br2 {
+  color: orange;
+}
+form input {
+  outline: none;
+  margin: 25px 0;
+  height: 45px;
+  border-radius: 25px;
+}
+button {
+  background-color: orange;
+  color: white;
+  width: 100%;
+  border-radius: 25px;
+  height: 45px;
+}
+.form {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
