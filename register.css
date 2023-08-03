@@ -68,7 +68,12 @@ header {
   width: 30%;
   height: 500px;
 }
-
+@media screen and (max-width: 480px) {
+  .form {
+    width: 100%;
+    background-color: aqua;
+  }
+}
 .form form input {
   display: block;
   width: 100%;

@@ -34,7 +34,7 @@ hiddenEl.forEach((el) => observer.observe(el));
 function renderProducts() {
   products.forEach((product) => {
     productsItems.innerHTML += `
-    <div class="col-3 text-center border  rounded shadow-lg position-relative my-3 mx-3">
+    <div class="col-12 col-md-4 col-lg-3 text-center border  rounded shadow-lg position-relative my-3 mx-3">
     <h4 class="position-absolute top-0 right-0 end-0 bg-danger rounded-circle p-1 text-white">$${product.price}</h4>
     <img class="w-100" src=${product.imgSrc} alt="">
     <div class="product-name fw-bold">${product.name}</div>
