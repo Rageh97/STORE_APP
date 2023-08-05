@@ -32,10 +32,10 @@ header {
 }
 .brand .span {
   margin-right: 30px;
- 
+
   padding: 3px;
   border-radius: 3px;
- 
+
   cursor: pointer;
   transition: 0.5s;
   color: rgb(23, 8, 102);
@@ -47,7 +47,7 @@ header {
 .brand .br {
   color: rgb(227, 171, 0);
 }
-.aproducts{
+.aproducts {
   text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ header {
 /* end of header  ................................*/
 
 .section-1 {
-  height: 600px;
+  height: 700px;
   display: flex;
   justify-content: center;
   background-image: url("/img/cover.jpg");
@@ -86,30 +86,34 @@ header {
   margin-bottom: 70px;
   object-fit: cover;
 }
-@media screen and (min-width: 480px) {
-  .section-1{
+/* @media screen and (max-width: 480px) {
+  .section-1 {
     height: 500px;
     object-fit: contain;
   }
- .brand{
-  background-color: rgb(218, 218, 218);
- 
-border-radius: 20px;
+  .brand {
+    background-color: rgb(218, 218, 218);
 
- }
-}
-@media screen and (max-width: 320px) {
-  .section-1{
+    border-radius: 20px;
+  }
+} */
+@media screen and (max-width: 580px) {
+  .section-1 {
     height: 300px;
     object-fit: contain;
   }
- .brand{
-  background-color: rgb(229, 229, 229);
-
- }
- .brand h3, .br, .span{
-  font-size: 14px;
- }
+  .brand {
+    background-color: rgb(229, 229, 229);
+  }
+  .brand h3,
+  .br,
+  .span {
+    font-size: 14px;
+  }
+  .lore a{
+    font-size: 14px;
+   
+  }
 }
 .text h1 {
   color: white;
@@ -120,7 +124,6 @@ border-radius: 20px;
 .products-item {
   flex-wrap: wrap;
   width: 100%;
- 
 }
 
 /* end of section 1.............................. */
@@ -130,7 +133,6 @@ border-radius: 20px;
 }
 .text-header h3 {
   margin-bottom: 25px;
-  
 }
 
 /* cart................................................ */
@@ -180,7 +182,6 @@ border-radius: 20px;
 @media screen and (max-width: 920px) {
   .cart {
     width: 100%;
-   
   }
 }
 .cart-Item {
@@ -206,7 +207,7 @@ border-radius: 20px;
 .total-price {
   width: 100%;
 }
-.no-items{
+.no-items {
   margin-left: 60px;
   border-radius: 10px;
   box-shadow: 0px 0px 8px black;
@@ -214,37 +215,36 @@ border-radius: 20px;
   transition: 2s;
 }
 /* ......very important how can i do animation scroll by css............................................................... */
-.hidden{
-opacity: 0;
-transition: all 1.5s;
-filter: blur(5px);
-transform: translateX(-100%);
+.hidden {
+  opacity: 0;
+  transition: all 1.5s;
+  filter: blur(5px);
+  transform: translateX(-100%);
 }
-.show{
-opacity: 1;
-filter: blur(0);
-transform: translateX(0);
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
-@media(prefers-reduced-motion){
-  .hidden{
-    
+@media (prefers-reduced-motion) {
+  .hidden {
     transition: none;
-    }
+  }
 }
 /* ................................................................................... */
 
 /* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
-.secfooter1{
+.secfooter1 {
   background-color: #0d3c83;
   box-shadow: 0px 0px 8px black;
   padding: 0;
   margin: 0;
 }
-i:hover{
+i:hover {
   color: orange;
   transition: 0.5s;
 }
-.UP{
+.UP {
   background-color: red;
   float: right;
   margin-top: -50px;
@@ -252,9 +252,6 @@ i:hover{
   padding: 2px;
   border: none;
   border-radius: 3px;
-
 }
 /* .......................................................................... */
 /* ..............responsive page............................................. */
-
-
