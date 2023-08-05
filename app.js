@@ -151,13 +151,14 @@ function changeNumberOfUnits(action, id) {
 
 //.............................................................................
 cartIcon.addEventListener("click", () => {
-  if (cartdiv.innerHTML != "") {
-    if (cartdiv.style.display == "block") {
-      cartdiv.style.display = "none";
-    } else {
+ 
+    if (cartdiv.style.display == "none") {
       cartdiv.style.display = "block";
+    } else {
+      cartdiv.style.display = "none";
     }
-  }
+  
+  
 });
 
 // .................................................................................
